@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import './Result.css'
+import style from './Result.module.css'
 
 import { Dream } from "../../types/dream";
 

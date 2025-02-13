@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import "./Header.css"
+import style from "./Header.module.css"
 
 function Header():ReactNode {
   return (

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import './Toolbar.css'
+import style from './Toolbar.module.css'
 
 function Toolbar(): ReactNode {
   return (
