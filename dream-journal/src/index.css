@@ -1,3 +1,13 @@
+:root {
+  --color-white: hsl(0, 0%, 97%);
+  --color-black: hsl(0, 0%, 15%);
+
+  --color-primary: hsl(243, 100%, 69%);
+
+  --color-surface: var(--color-white);
+  --color-text: var(--color-black);
+}
+
 *,
 *::before,
 *::after {
@@ -25,4 +35,10 @@ optgroup {
   font-family: inherit;
 }
 
+body {
+  background-color: var(--color-surface);
+  color: var(--color-text);
 
+  inline-size: min(45rem, 100% - 2rem);
+  margin-inline: auto;
+}
