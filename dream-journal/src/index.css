@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Kanit", system-ui;
+}
+
+input,
+label,
+select,
+textarea,
+button,
+fieldset,
+legend,
+datalist,
+output,
+option,
+optgroup {
+  font-family: inherit;
+}
+
+
