@@ -5,7 +5,9 @@ import style from "./Header.module.css"
 function Header():ReactNode {
   return (
     <>
-      <header><h1>Dream Journal</h1></header>
+      <header className={style.header}>
+        <h1 >Dream Journal</h1>
+        </header>
     </>
   );
 }

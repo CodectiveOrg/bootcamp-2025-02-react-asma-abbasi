@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import "./App.css";
+import styled from "./App.module.css";
 
 import Header from "./components/Header/Header";
 import Toolbar from "./components/Toolbar/Toolbar";
