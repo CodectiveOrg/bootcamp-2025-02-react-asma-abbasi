@@ -1,9 +1,11 @@
 import { ReactNode } from "react";
 
 import MingcuteSearchLine from "../../icons/MingcuteSearchLine";
+import MingcuteMoonLine from "../../icons/MingcuteMoonLine";
 
 import TextInput from "../TextInput/TextInput";
 import Select from "../Select/Select";
+import Button from "../Button/Button";
 
 
 function Toolbar(): ReactNode {
@@ -18,9 +20,10 @@ function Toolbar(): ReactNode {
           { value: "good", label: "Good" },
           { value: "bad", label: "Bad" }
         ]}>
-
         </Select>
-        <button>-</button>
+        <Button variant="solid" shape="square" size="meduim">
+          <MingcuteMoonLine />
+        </Button>
       </div>
     </>
   )
