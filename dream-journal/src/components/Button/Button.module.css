@@ -11,13 +11,25 @@
     outline: none;
   }
 
+  &.primary {
+    --button-color: var(--color-primary);
+    --button-color-hover: var(--color-primary-hover);
+    --button-color-fade: var(--color-primary-fade)
+  }
+
+  &.danger {
+    --button-color: var(--color-danger);
+    --button-color-hover: var(--color-danger-hover);
+    --button-color-fade: var(--color-danger-fade)
+  }
+
   &.solid {
     color: var(--color-white);
-    background-color: var(--color-primary);
+    background-color: var(--button-color);
 
     &:hover,
     &:focus {
-      background-color: var(--color-primary-hover);
+      background-color: var(--button-color-hover);
       box-shadow: var(--shadow);
     }
   }
@@ -26,12 +38,30 @@
     color: var(--color-text);
     background-color: var(--color-surface);
 
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--button-color);
 
     &:hover,
     &:focus {
-      background-color: var(--color-primary-fade);
+      background-color: var(--button-color-fade);
+    }
+  }
 
+  &.ghost {
+    color: var(--button-color);
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      background-color: var(--button-color-fade);
+    }
+  }
+
+  &.small {
+    block-size: 1.5rem;
+
+    svg {
+      block-size: 1rem;
+      inline-size: auto;
     }
   }
 

@@ -3,18 +3,22 @@ import { ComponentProps, ReactElement } from "react";
 import clsx from "clsx";
 import styles from './Button.module.css';
 
-type Variant = "solid" | "outlined"
-type Size = "meduim" | "large"
+type Color = "primary" | "danger"
+type Variant = "solid" | "outlined" | "ghost"
+type Size = "small" | "meduim" | "large"
 type Shape = "rectangel" | "square" | "circle"
 
 type Props = ComponentProps<"button"> & {
+  color?: Color,
   variant?: Variant,
   size?: Size,
   shape?: Shape
 }
 
 export default function Button(
-  { variant = "solid",
+  { 
+    color = "primary",
+    variant = "solid",
     size = "meduim",
     shape = "rectangel",
     children,
@@ -25,6 +29,7 @@ export default function Button(
     <button
       className={clsx(
         styles.button,
+        styles[color],
         styles[variant],
         styles[size],
         styles[shape],
