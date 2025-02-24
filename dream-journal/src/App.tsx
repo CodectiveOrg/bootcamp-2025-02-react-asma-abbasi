@@ -1,10 +1,9 @@
 import { ReactNode } from "react";
 
-import styled from "./App.module.css";
-
 import Header from "./components/Header/Header";
 import Toolbar from "./components/Toolbar/Toolbar";
 import Result from "./components/Result/Result";
+import Create from "./components/Create/Create";
 
 function App(): ReactNode {
   return (
@@ -14,6 +13,7 @@ function App(): ReactNode {
         <Toolbar />
         <Result />
       </main>
+      <Create />
     </>
   );
 }
