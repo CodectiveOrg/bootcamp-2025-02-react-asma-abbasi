@@ -1,6 +1,6 @@
 import { ComponentProps, ReactNode } from "react";
-import clsx from "clsx";
 
+import clsx from "clsx";
 import styles from "./Select.module.css"
 
 import { SelectOption } from "../../types/select-options";
