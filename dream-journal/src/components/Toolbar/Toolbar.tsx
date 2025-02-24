@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
 
+import styles from './Toolbar.module.css'
+
 import MingcuteSearchLine from "../../icons/MingcuteSearchLine";
 import MingcuteMoonLine from "../../icons/MingcuteMoonLine";
 
@@ -11,7 +13,7 @@ import Button from "../Button/Button";
 function Toolbar(): ReactNode {
   return (
     <>
-      <div className="toolbar">
+      <div className={styles.toolbar}>
         <TextInput
           placeholder="Search note ..."
           suffixIcon={<MingcuteSearchLine />} />
