@@ -21,10 +21,6 @@ export default function Create(): ReactNode {
     dialogRef.current?.close()
   }
 
-  useEffect(() => {
-    dialogRef.current?.showModal()
-  }, [])
-
   return (
     <div className={styles.create}>
       <Button size="large" shape="circle" onClick={addButtonClickHandler} >
