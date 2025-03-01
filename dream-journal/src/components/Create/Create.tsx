@@ -7,6 +7,7 @@ import MingcuteAddLine from "../../icons/MingcuteAddLine";
 import Button from "../Button/Button";
 import TextInput from "../TextInput/TextInput";
 import TextArea from "../TextArea/TextArea";
+import DateInput from "../DateInput/DateInput";
 
 export default function Create(): ReactNode {
   const dialogRef = useRef<HTMLDialogElement>(null)
@@ -35,6 +36,7 @@ export default function Create(): ReactNode {
           </div>
           <TextInput placeholder="Input your title ..." />
           <TextArea placeholder="input your description ..." />
+          <DateInput />
           <div className={styles.action}>
             <Button
               variant="outlined"
