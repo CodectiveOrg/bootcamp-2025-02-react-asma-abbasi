@@ -6,6 +6,7 @@ import MingcuteAddLine from "../../icons/MingcuteAddLine";
 
 import Button from "../Button/Button";
 import TextInput from "../TextInput/TextInput";
+import TextArea from "../TextArea/TextArea";
 
 export default function Create(): ReactNode {
   const dialogRef = useRef<HTMLDialogElement>(null)
@@ -32,7 +33,8 @@ export default function Create(): ReactNode {
           <div className={styles.title}>
             Create a New Dream
           </div>
-          <TextInput placeholder="Input your title..."></TextInput>
+          <TextInput placeholder="Input your title ..." />
+          <TextArea placeholder="input your description ..." />
           <div className={styles.action}>
             <Button
               variant="outlined"
