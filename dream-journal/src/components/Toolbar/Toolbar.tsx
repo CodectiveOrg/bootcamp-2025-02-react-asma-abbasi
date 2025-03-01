@@ -15,7 +15,7 @@ function Toolbar(): ReactNode {
     <>
       <div className={styles.toolbar}>
         <TextInput
-          placeholder="Search note ..."
+          placeholder="Search Dream ..."
           suffixIcon={<MingcuteSearchLine />} />
         <Select options={[
           { value: "all", label: "All" },
