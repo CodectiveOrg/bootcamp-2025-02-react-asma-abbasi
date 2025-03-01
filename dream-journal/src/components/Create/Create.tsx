@@ -8,6 +8,7 @@ import Button from "../Button/Button";
 import TextInput from "../TextInput/TextInput";
 import TextArea from "../TextArea/TextArea";
 import DateInput from "../DateInput/DateInput";
+import Select from "../Select/Select";
 
 export default function Create(): ReactNode {
   const dialogRef = useRef<HTMLDialogElement>(null)
@@ -37,6 +38,10 @@ export default function Create(): ReactNode {
           <TextInput placeholder="Input your title ..." />
           <TextArea placeholder="input your description ..." />
           <DateInput />
+          <Select varian="outlined" options={[
+            { value: "good", label: "Good" },
+            { value: "bad", label: "Bad" }
+          ]}></Select>
           <div className={styles.action}>
             <Button
               variant="outlined"

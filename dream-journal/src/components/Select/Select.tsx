@@ -5,13 +5,20 @@ import styles from "./Select.module.css"
 
 import { SelectOption } from "../../types/select-options";
 
+type Variant = 'solid' | "outlined";
+
 type Props = ComponentProps<"select"> & {
+  varian?: Variant;
   options: SelectOption[];
 }
 
-export default function Select({ options, ...otherProps }: Props): ReactNode {
+export default function Select({
+  varian= "solid",
+  options,
+  ...otherProps
+}: Props): ReactNode {
   return (
-    <div className={clsx(styles["select"])}>
+    <div className={clsx(styles["select"],styles[varian])}>
       <select {...otherProps}>
         {options.map((option) => (
           <option key={option.value} value={option.value}>
